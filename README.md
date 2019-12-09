@@ -42,3 +42,8 @@ The objective of this project is to ensure this system make the data management 
 - Reservation.java
 - Deletion.java
 
+## 3.0 SEQUENCE DIAGRAM
+1. Login
+2. Insert Information
+3. Reserve Room
+4. Pay Room Reservation
