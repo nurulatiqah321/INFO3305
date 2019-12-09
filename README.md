@@ -37,7 +37,7 @@ The objective of this project is to ensure this system make the data management 
 - Updatereservation.jsp
 - View.jsp 
 
-3)CONTROLLER
+3) CONTROLLER
 - Validation.java
 - Reservation.java
 - Deletion.java
@@ -47,3 +47,6 @@ The objective of this project is to ensure this system make the data management 
 2. Insert Information
 3. Reserve Room
 4. Pay Room Reservation
+
+## 4.0 REFERENCES
+free flowchart maker and diagrams online. (n.d.). Retrieved from https://www.draw.io/?client=1#G1VLjQYfWxXkS3CiPH-cxlWYzPfKrokyRA. 
