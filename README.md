@@ -17,15 +17,28 @@ The objective of this project is to ensure this system make the data management 
 ## 1.3 FEATURES AND FUNCTIONALITIES
 
 1) Add data - Adding new customer information to the system.
-
 2) Delete data - Deleting customer information from the system.
-
 3) Update data - Updating customer information.
-
 4) View data - View customer details.
-
 5) Error checking - Error checking the login page as to avoid unauthorized login attempt.
-
 6) User authentication - Only staff and user with valid id and password can access the system.
 
+## 2.0 MVC DIAGRAM
+
+1) MODEL
+- Login,java
+- customer.java
+
+2) VIEW
+- Form.jsp
+- Main.jsp
+- Reservation.jsp
+- Header.jsp
+- Updatereservation.jsp
+- View.jsp 
+
+3)CONTROLLER
+- Validation.java
+- Reservation.java
+- Deletion.java
 
