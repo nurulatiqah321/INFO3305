@@ -1,9 +1,9 @@
 # HOTEL RESERVATION SYSTEM
 
-1.NUR’AIN ZULAIKHA BT JAMALUDDIN   1716308
-2.NUR DHIYA ALYANI BT RADUAN       1711212
-3.SITI HAJAR BINTI BORHANUDDIN     1710148
-4.NURUL ATIQAH BINTI MUSTAFA KAMAL 1718830
+1) NUR’AIN ZULAIKHA BT JAMALUDDIN   1716308
+2) NUR DHIYA ALYANI BT RADUAN       1711212
+3) SITI HAJAR BINTI BORHANUDDIN     1710148
+4) NURUL ATIQAH BINTI MUSTAFA KAMAL 1718830
 
 ## 1.1 INTRODUCTION
 
@@ -16,22 +16,16 @@ This project is about Hotel Reservation System which is created and designed to 
 
 ## 1.3 FEATURES AND FUNCTIONALITIES
 
-1) Add data
-Adding new customer information to the system.
+1) Add data - Adding new customer information to the system.
 
-2) Delete data
-Deleting customer information from the system.
+2) Delete data - Deleting customer information from the system.
 
-3) Update data
-Updating customer information.
+3) Update data - Updating customer information.
 
-4) View data
-View customer details.
+4) View data - View customer details.
 
-5) Error checking
-Error checking the login page as to avoid unauthorized login attempt.
+5) Error checking - Error checking the login page as to avoid unauthorized login attempt.
 
-6) User authentication 
-Only staff and user with valid id and password can access the system.
+6) User authentication - Only staff and user with valid id and password can access the system.
 
 
