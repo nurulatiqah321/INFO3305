@@ -12,7 +12,7 @@ This project is about Hotel Reservation System which is created and designed to 
 
 ## 1.2 OBJECTIVE
 	
-	The objective of this project is to ensure this system make the data management become more systematic and efficient. To implement the systematic process rather than record the data in a manual way. It is also to ensure the system security by preventing an unauthorized login attempt into the system.
+The objective of this project is to ensure this system make the data management become more systematic and efficient. To implement the systematic process rather than record the data in a manual way. It is also to ensure the system security by preventing an unauthorized login attempt into the system.
 
 ## 1.3 FEATURES AND FUNCTIONALITIES
 
