@@ -19,22 +19,39 @@
 </tr>
 
 <tr>
-<td>Customer ID</td>
-<td>:</td>
-<td><input type ="text" name="idcust" size="30"></td>
-</tr>
-
-
-<tr>
 <td>Phone No</td>
 <td>:</td>
 <td><input type ="text" name="cphone" size="30"></td>
 </tr>
 
+<tr>
+<td>Email</td>
+<td>:</td>
+<td><input type ="text" name="email" size="30"></td>
+</tr>
+
+<tr>
+<td>Room Type</td>
+<td>:</td>
+<td><input type="radio" name="rType" value="single">Single
+<input type="radio" name="rType" value="double">Double
+<input type="radio" name="rType" value="Deluxe">Deluxe
+</td>
+</tr>
+
+<tr>
+<td>Duration</td>
+<td>:</td>
+<td><input type="radio" name="rType" value="3 Days">3 Days
+<input type="radio" name="rType" value="5 Days">5 Days
+<input type="radio" name="rType" value="7 Days">7 Days
+</td>
+</tr>
+
 </table>
-<div align ="center" style = "margin-top:5px">
-<button type ="submit" value = "submit" style = "margin :10px 250px">Submit</button>
-<button type ="clear" value = "reset">Reset</button>
+<div align="center" style="margin-top:5px">
+<button type="submit" value="submit">Submit</button>
+<button type="clear" value="reset" >Reset</button>
 </div>
 
 </form>
