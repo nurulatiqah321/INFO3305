@@ -12,7 +12,7 @@ public class customer {
 	
 	private String namecust;
 	private String email;
-	private int cphone;
+	private String cphone;
 	private String rType;
 	private String duration;
 	
@@ -27,7 +27,7 @@ public class customer {
 		namecust = "unknown";
 		email = "unknown";
 		rType = "unknown";
-		cphone = 0;
+		cphone = "unknown";
 		duration = "unknown";
 	}
 	
@@ -54,12 +54,12 @@ public class customer {
 		}
 
 	// customer phone no
-	public void setcphone(int cphone){
+	public void setcphone(String cphone){
 	  this.cphone = cphone;
 	 }
 	
 
-	public int getcphone(){
+	public String getcphone(){
 	 return cphone;
 	}
 	
@@ -96,9 +96,9 @@ public class customer {
 			
 			statement.setString(1,getnamecust());
 			statement.setString(2,getEmail());
-			statement.setInt(3,getcphone());
+			statement.setString(3,getcphone());
 			statement.setString(4,getrType());
-			statement.setString(3,getduration());
+			statement.setString(5,getduration());
 			
 			//Execute the query or update query
 			statement.executeUpdate();
@@ -135,10 +135,10 @@ public class customer {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel?useTimezone=true&serverTimezone=UTC\\\", \\\"root\\\", \\\"Nurain_98");
 			PreparedStatement statement = con.prepareStatement(UPDATE_CUST_SQL);
 		
-			statement.setString(2,getEmail());
-			statement.setInt(3,getcphone());
-			statement.setString(4,getrType());
-			statement.setString(3,getduration());
+			statement.setString(1,getEmail());
+			statement.setString(2,getcphone());
+			statement.setString(3,getrType());
+			statement.setString(4,getduration());
 			
 			
 			//Execute the query or update query
