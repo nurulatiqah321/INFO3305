@@ -21,9 +21,9 @@
 </tr>
 
 <tr>
-<td>Customer ID</td>
+<td>Email</td>
 <td>:</td>
-<td><jsp:getProperty name = "custInfo" property = "idcust"/>
+<td><jsp:getProperty name = "custInfo" property = "email"/>
 </td>
 </tr>
 
@@ -35,7 +35,19 @@
 </td>
 </tr>
 
+<tr>
+<td>Room Type</td>
+<td>:</td>
+<td><jsp:getProperty name = "custInfo" property = "rType"/>
+</td>
+</tr>
 
+<tr>
+<td>Duration</td>
+<td>:</td>
+<td><jsp:getProperty name = "custInfo" property = "duration"/>
+</td>
+</tr>
 
 
 </table>
