@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hotel Reservation System</title>
+<title>Insert title here</title>
 </head>
 <body>
- 
 <center>
-<form method = "POST" action = "custForm.jsp" align="center">
+<form method = "POST" action = "custInfo.jsp" align="center">
 
 <h3>Hotel Reservation System</h3>
   <tr>
