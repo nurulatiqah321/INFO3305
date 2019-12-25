@@ -15,14 +15,14 @@
   <tr>
     <td>Username</td>
     <td>:</td>
-    <input type = "text" name = "word" id ="word">
+    <input type = "text" name = "word" id ="id">
     </tr>
     
     <br><br>
     <tr>
     <td>Password</td>
     <td>:</td>
-    <input type = "text" name = "word" id ="word">
+    <input type = "text" name = "word" id ="password">
     </tr>
 
     <br><br>
