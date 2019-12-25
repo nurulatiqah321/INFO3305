@@ -47,9 +47,9 @@
 <tr>
 <td>Duration</td>
 <td>:</td>
-<td><input type="radio" name="rType" value="3 Days">3 Days
-<input type="radio" name="rType" value="5 Days">5 Days
-<input type="radio" name="rType" value="7 Days">7 Days
+<td><input type="radio" name="duration" value="3 Days">3 Days
+<input type="radio" name="duration" value="5 Days">5 Days
+<input type="radio" name="duration" value="7 Days">7 Days
 </td>
 </tr>
 
