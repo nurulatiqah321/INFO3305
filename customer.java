@@ -1,30 +1,37 @@
 package model;
-import java.sql.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class customer {
-	private String idcust;
+	
 	private String namecust;
-	private String cphone;
+	private String email;
+	private int cphone;
+	private String rType;
+	private String duration;
+	
 	private static final String INSERT_CUST_SQL = "INSERT INTO users" +
-	        "  (id, name, phone) VALUES " +
+	        "  (name, phone,email,rType,duration) VALUES " +
 	        " (?, ?, ?);";
 	private static final String DELETE_CUST_SQL = "delete from users where id = ?;";
 	private static final String UPDATE_CUST_SQL = "update users set name = ? where id = ?;";
 	
 	public customer(){
-		idcust = "unknown";
+		
 		namecust = "unknown";
-		cphone = "unknown";
+		email = "unknown";
+		rType = "unknown";
+		cphone = 0;
+		duration = "unknown";
 	}
 	
-	// customer id
-		public void setidcust(String idcust){
-		  this.idcust = idcust;
-		}
-
-		public String getidcust(){
-		 return idcust;
-		}
+	
 
 	// customer name
 	public void setnamecust(String namecust){
@@ -35,31 +42,63 @@ public class customer {
 	public String getnamecust(){
 	  return namecust;
 	}
+	
+	// customer email
+		public void setEmail(String email){
+		    this.email = email;
+		  }
+		 
+
+		public String getEmail(){
+		  return email;
+		}
 
 	// customer phone no
-	public void setcphone(String cphone){
-	  if(cphone.length() <= 8){
+	public void setcphone(int cphone){
 	  this.cphone = cphone;
 	 }
-	}
+	
 
-	public String getcphone(){
+	public int getcphone(){
 	 return cphone;
 	}
+	
+	// customer room type
+		public void setrType(String rType){
+		    this.rType = rType;
+		  }
+		 
 
+		public String getrType(){
+		  return rType;
+		}
+
+		// customer duration
+		public void setduration(String duration){
+		    this.duration = duration;
+		  }
+		 
+
+		public String getduration(){
+		  return duration;
+		}
+		
 	public boolean insertCustRecord(){
 		 //System.out.println(INSERT_CUST_SQL);
 		 
 		 //Establishing a Connection
 		 try{
 			//Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dev?autoReconnect=true&useSSL=false","DBlogin","DBpassword");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel?useTimezone=true&serverTimezone=UTC", "root", "Nurain_98");
 			PreparedStatement statement = con.prepareStatement(INSERT_CUST_SQL);
 			
 			//Create a statement using connection object
-			statement.setString(1,getidcust());
-			statement.setString(2,getnamecust());
-			statement.setString(3,getcphone());
+			
+			statement.setString(1,getnamecust());
+			statement.setString(2,getEmail());
+			statement.setInt(3,getcphone());
+			statement.setString(4,getrType());
+			statement.setString(3,getduration());
 			
 			//Execute the query or update query
 			statement.executeUpdate();
@@ -75,10 +114,11 @@ public class customer {
 		
 		try {
 			//Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dev?autoReconnect=true&useSSL=false","DBlogin","DBpassword");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel?useTimezone=true&serverTimezone=UTC\", \"root\", \"Nurain_98");
 			PreparedStatement statement = con.prepareStatement(DELETE_CUST_SQL);
 			
-			statement.setString(1, idcust);
+			statement.setString(1, namecust);
+			
 			statement.executeUpdate();
 			statement.close();
 	        con.close();
@@ -92,12 +132,14 @@ public class customer {
 		
 		try {
 			//Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dev?autoReconnect=true&useSSL=false","DBlogin","DBpassword");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel?useTimezone=true&serverTimezone=UTC\\\", \\\"root\\\", \\\"Nurain_98");
 			PreparedStatement statement = con.prepareStatement(UPDATE_CUST_SQL);
+		
+			statement.setString(2,getEmail());
+			statement.setInt(3,getcphone());
+			statement.setString(4,getrType());
+			statement.setString(3,getduration());
 			
-			statement.setString(1,getidcust());
-			statement.setString(2,getnamecust());
-			statement.setString(3,getcphone());
 			
 			//Execute the query or update query
 			statement.executeUpdate();
@@ -110,6 +152,6 @@ public class customer {
         }   
 		
 	}
-	
 }
+
 
