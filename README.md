@@ -27,21 +27,22 @@ The objective of this project is to ensure this system make the data management 
 ## 2.0 MVC DIAGRAM
 
 1) MODEL
-- Login,java
+- Login.java
 - customer.java
+- employee.java
 
 2) VIEW
-- Form.jsp
-- Main.jsp
-- Reservation.jsp
-- Header.jsp
+- custForm.jsp
+- custInfo.jsp
+- main.jsp
+- header.jsp
 - Updatereservation.jsp
-- View.jsp 
+
 
 3) CONTROLLER
 - Validation.java
 - Reservation.java
-- Deletion.java
+
 
 ## 3.0 SEQUENCE DIAGRAM
 1. Login
