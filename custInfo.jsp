@@ -49,7 +49,47 @@
 </td>
 </tr>
 
+<%!
+String priceRoom,priceDuration;
+double rType,duration,total;
+double priceR = 0.0,priceD;
+%>
 
+<% 
+priceRoom = request.getParameter("rType"); 
+priceDuration = request.getParameter("duration");
+//rType = Double.parseDouble(priceRoom);
+//duration = Double.parseDouble(priceDuration);
+
+
+if(request.getParameter("rType")!=null){
+	if(request.getParameter("rType").equals("single")){
+		priceR = 50.0;
+	}
+	else if(request.getParameter("rType").equals("double")){
+		priceR = 120.0;
+	}
+	else if(request.getParameter("rType").equals("deluxe")){
+		priceR = 250;
+	}
+}else {
+	out.println("<br><br>Please select your room or duration!");}
+
+
+if(request.getParameter("duration")!=null){
+	if(duration>=1){
+		priceD = 150.0*duration;
+	}
+	else
+		priceD = 110*duration;
+}
+else {
+	out.println("<br><br>Please select your duration!");}
+
+total = priceR+priceD;
+out.println("Total Price is: " + total);
+%>
+    
 </table>
 </font>
 </body>
