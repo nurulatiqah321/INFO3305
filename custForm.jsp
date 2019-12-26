@@ -2,7 +2,6 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page session="true" %>
 <%@ include file="setHeader.jsp" %>
-<%@ page errorPage="error.jsp" %>
 <% session.invalidate(); %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
