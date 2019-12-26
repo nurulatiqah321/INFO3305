@@ -22,6 +22,7 @@ The objective of this project is to ensure this system make the data management 
 4) View data - View customer details.
 5) Error checking - Error checking the login page as to avoid unauthorized login attempt.
 6) User authentication - Only staff and user with valid id and password can access the system.
+8) Login Validation - Customer enter the username and password and connected to database.
 
 ## 2.0 MVC DIAGRAM
 
