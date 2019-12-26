@@ -32,6 +32,7 @@ The objective of this project is to ensure this system make the data management 
 - employee.java
 
 2) VIEW
+- login.jsp
 - custForm.jsp
 - custInfo.jsp
 - main.jsp
@@ -40,7 +41,7 @@ The objective of this project is to ensure this system make the data management 
 
 
 3) CONTROLLER
-- Validation.java
+- Login.java
 - Reservation.java
 
 
